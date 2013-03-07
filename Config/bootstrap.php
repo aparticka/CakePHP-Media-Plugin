@@ -95,7 +95,7 @@
  *    }}}
  */
 if (!defined('MEDIA')) {
-	define('MEDIA', WWW_ROOT . 'media' . DS);
+	define('MEDIA', WWW_ROOT . 'uploads' . DS);
 }
 if (!defined('MEDIA_STATIC')) {
 	define('MEDIA_STATIC', MEDIA . 'static' . DS);
@@ -104,7 +104,7 @@ if (!defined('MEDIA_FILTER')) {
 	define('MEDIA_FILTER', MEDIA . 'filter' . DS);
 }
 if (!defined('MEDIA_TRANSFER')) {
-	define('MEDIA_TRANSFER', APP. 'Media' . DS . 'transfer' . DS);
+	define('MEDIA_TRANSFER', MEDIA . 'transfer' . DS);
 }
 
 /**
@@ -116,7 +116,7 @@ if (!defined('MEDIA_TRANSFER')) {
  * In case the corresponding directory isn't served use `false` as a value.
  */
 if (!defined('MEDIA_URL')) {
-	define('MEDIA_URL', 'media/');
+	define('MEDIA_URL', 'uploads/');
 }
 if (!defined('MEDIA_STATIC_URL')) {
 	define('MEDIA_STATIC_URL', MEDIA_URL . 'static/');
